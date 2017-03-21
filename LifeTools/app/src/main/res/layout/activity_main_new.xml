@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.yx.baselibrary.widget.XViewPager
+        android:id="@+id/home_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_bottom" />
+
+    <RadioGroup
+        android:id="@+id/rg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#f5f5f5"
+        android:checkedButton="@+id/rb_main"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="5dp"
+            android:text="商城"
+            android:drawableTop="@drawable/ic_shop_selector"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="14dp" />
+
+
+        <RadioButton
+            android:id="@+id/rb_community"
+            android:layout_width="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:text="社区"
+            android:drawableTop="@drawable/ic_community_selector"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="14dp" />
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="5dp"
+            android:text="我的"
+            android:drawableTop="@drawable/ic_my_selector"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="14dp" />
+    </RadioGroup>
+
+
+</RelativeLayout>

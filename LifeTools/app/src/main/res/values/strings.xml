@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">LifeTools</string>
+    <string name="_23">惠州市 大部分地区多云23度\n二月28号大众生鲜超市盛大入住本社区</string>
+
+
+    <string-array name="community_name">
+        <item>小区报修</item>
+        <item>小区公告</item>
+        <item>物业缴费</item>
+        <item>建议反馈</item>
+        <item>小区新闻</item>
+        <item>房屋租赁</item>
+    </string-array>
+
+
+    <integer-array name="community_icon">
+        <item>@mipmap/ic_community_repair</item>
+        <item>@mipmap/ic_community_notice</item>
+        <item>@mipmap/ic_community_fee</item>
+        <item>@mipmap/ic_community_suggest</item>
+        <item>@mipmap/ic_community_news</item>
+        <item>@mipmap/ic_community_house</item>
+    </integer-array>
+
+</resources>

@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        multiDexEnabled true
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    testCompile 'junit:junit:4.12'
+    //基础库
+    compile 'com.android.support:percent:25.0.1'
+    compile 'com.android.support:support-annotations:25.0.1'
+    compile 'com.android.support:support-v4:25.0.1'
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    compile 'com.android.support:cardview-v7:25.0.1'
+    compile 'com.android.support:design:25.0.1'
+    //图片加载库
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //Android屏幕适配方案
+    compile 'com.zhy:autolayout:1.4.5'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.github.hotchemi:permissionsdispatcher:2.3.1'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.3.1'
+    compile 'com.muddzdev:styleabletoast:1.0.6'
+    compile 'com.android.support:multidex:+'
+    //动画兼容库
+    compile 'com.nineoldandroids:library:2.4.0'
+    //recyclerView支持库
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.8.3'
+    //进度条样式
+    compile 'com.github.ybq:Android-SpinKit:1.1.0'
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.5'
+    compile 'com.youth.banner:banner:1.4.9'
+    //最新版本
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okio:okio:1.11.0'
+}

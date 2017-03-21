@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_loading_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_custom_progress_dialog"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="100.0dip"
+        android:layout_height="100.0dip"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="35.0dip"
+            android:layout_height="35.0dip"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerInside"
+                android:src="@android:drawable/ic_menu_search"/>
+
+            <!--<ProgressBar-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:indeterminateDrawable="@drawable/lib_im_loading_white" />-->
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.FadingCircle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:SpinKit_Color="@android:color/white"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/loading_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp"/>
+    </LinearLayout>
+
+</LinearLayout>
